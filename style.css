@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", SansSerif;
+}
+
+/* custom properties */
+:root {
+    /* colors */
+    --background-color-light: #add8e6;
+    --background-color-lighter: #fff;
+    --background-color-dark: #003147;
+    --title-alt-color: #003147;
+    --icon-color: #03a9f4;
+    --text-color: #081921;
+    --text-alt-color: #848c90;
+    /* margins */
+    --margin: 1rem;
+    --mv-1: 0.625rem;
+    --mv-2: 1.25rem;
+}
+
+body {
+    background-color: var(--background-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: var(--background-color-lighter);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+    position: relative;
+    background-color: var(--background-color-dark);
+    padding: 40px;
+}
+
+.profile__div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile__div .profile__pic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile__div .profile__pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile__div h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile__name {
+    color: var(--icon-color);
+    /* font-size: 0.8em;
+    font-weight: 300; */
+}
+
+.contact__div {padding-top: 40px;}
+
+.title {
+    color: var(--background-color-lighter);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact__div ul {
+    position: relative;
+}
+
+.contact__div ul li {
+    list-style: none;
+    position: relative;
+    margin: var(--mv-1) 0;
+    cursor: cursor;
+}
+
+.contact__div ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: var(--icon-color);
+}
+
+.contact__div ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+#email {
+    font-size: 0.9rem;
+}
+
+.contact__div.education li {
+    margin-bottom: 15px;
+}
+
+.contact__div.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contact__div.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact__div.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+a.text {
+    text-decoration: none;
+    color: var(--background-color-lighter);
+}
+
+a.text:hover {
+    color: var(--icon-color);
+}
+.contact__div.certificates .percent div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.container .right_Side {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.exp__div {
+    margin-bottom: 50px;
+}
+
+.exp__div:last-child {margin-bottom: 0;}
+
+.title2 {
+    color: var(--title-alt-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--mv-1);
+}
+
+p {color: var(--text-color);}
+
+.exp__div .box {
+    display: flex;
+    flex-direction: row;
+    margin: var(--mv-2) 0;
+}
+
+.exp__div .box .year_company {
+    min-width: 150px;
+}
+
+/* .exp__div .box .year_company h4 {
+    text-transform: uppercase;
+    color: var(--text-alt-color);
+    font-weight: 600;
+} */
+
+.year_company,
+.year_company p {
+    /* text-transform: uppercase; */
+    color: var(--text-alt-color);
+    font-weight: 600;
+}
+
+.exp__div .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .exp__div .box {
+        flex-direction: column;
+    }
+
+    .exp__div .box .year_company {
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.englishw50 {
+    width: 60%;
+}
+
+.russianw90 {
+    width: 90%;
+}
+
+.frenchw30 {
+    width: 30%;
+}
+
+.htmlws30 {
+    width: 50%;
+}
+
+.cssws45 {
+    width: 45%;
+}
+
+.jsws70 {
+    width: 70%;
+}
+
+.phws40 {
+    width: 40%;
+}
+
+.ilws60 {
+    width: 60%;
+}
+
+.adw70 {
+    width: 70%;
+}
