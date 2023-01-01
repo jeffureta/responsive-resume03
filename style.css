@@ -120,9 +120,7 @@ body {
     margin-bottom: 20px;
 }
 
-.contact__div ul {
-    position: relative;
-}
+.contact__div ul {position: relative;}
 
 .contact__div ul li {
     list-style: none;
@@ -139,8 +137,16 @@ body {
 }
 
 .contact__div ul li span {
-    color: #fff;
+    color: var(--background-color-lighter);
     font-weight: 300;
+}
+
+.contact__div a {
+    color: var(--background-color-lighter);
+}
+
+.contact__div [href|="https://www.linkedin.com/in/jeffureta/"]:hover {
+    color: var(--icon-color);
 }
 
 #email {
