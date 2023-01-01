@@ -11,8 +11,12 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/data.css"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>     -->
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -24,6 +28,9 @@
                 </div>
 
                 <h2>Hi, I'm&nbsp;<span class="profile__name">Jeff&nbsp;Ureta</span></h2>
+                <div>
+                    <button onclick="generatePDF()" class="btn download-btn">Download PDF</button>
+                </div>
             </div>
             <!-- /profile__div -->
             <div class="contact__div">

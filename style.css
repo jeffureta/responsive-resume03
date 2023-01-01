@@ -96,6 +96,18 @@ body {
     color: var(--icon-color);
 }
 
+.btn.download-btn {
+    width: 8rem;
+    height: 2rem;
+    background-color: var(--icon-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color-lighter);
+    font-weight: 600;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
 .contact__div {
     padding-top: 40px;
 }
@@ -167,14 +179,6 @@ a.text:hover {
     color: var(--icon-color);
 }
 
-/* .contact__div.certificates .percent div {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #03a9f4;
-} */
-
 .container .right_Side {
     position: relative;
     background-color: #fff;
@@ -210,14 +214,7 @@ p {
     min-width: 150px;
 }
 
-/* .exp__div .box .year_company h4 {
-    text-transform: uppercase;
-    color: var(--text-alt-color);
-    font-weight: 600;
-} */
-
 .year_company :is(h4, p) {
-    /* text-transform: uppercase; */
     color: var(--text-alt-color-2);
     font-weight: 600;
 }
@@ -227,17 +224,6 @@ p {
     color: var(--text-alt-color-2);
     font-size: 16px;
 }
-
-/* .skills .box {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .skills {margin: var(--mv-2) 0;} */
 
 .skills h2 {
     color: var(--title-alt-color);
@@ -254,8 +240,6 @@ p {
 .skills .icon {
     font-size: 2rem;
     color: var(--text-alt-color-2);
-    /* height: 1rem;
-    width: 1rem; */
 }
 
 .skills ul li {
