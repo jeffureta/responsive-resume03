@@ -291,11 +291,6 @@ p {
     background-color: #03a9f4;
 }
 
-.references ul {
-    /* display: inline-block; */
-    /* grid-template-columns: repeat(4, 1fr); */
-}
-
 .references ul li {
     list-style: none;
     display: inline-block;
@@ -303,6 +298,8 @@ p {
     font-weight: 500;
     margin-right: 1rem;
 }
+
+.references ul li:last-child {margin-right: 0;}
 
 .references .list__link {color: var(--text-color);}
 
