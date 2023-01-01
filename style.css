@@ -342,39 +342,3 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-.englishw50 {
-    width: 60%;
-}
-
-.russianw90 {
-    width: 90%;
-}
-
-.frenchw30 {
-    width: 30%;
-}
-
-.htmlws30 {
-    width: 50%;
-}
-
-.cssws45 {
-    width: 45%;
-}
-
-.jsws70 {
-    width: 70%;
-}
-
-.phws40 {
-    width: 40%;
-}
-
-.ilws60 {
-    width: 60%;
-}
-
-.adw70 {
-    width: 70%;
-}
