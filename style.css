@@ -216,10 +216,9 @@ p {
     font-weight: 600;
 } */
 
-.year_company,
-.year_company p {
+.year_company :is(h4, p) {
     /* text-transform: uppercase; */
-    color: var(--text-alt-color);
+    color: var(--text-alt-color-2);
     font-weight: 600;
 }
 
