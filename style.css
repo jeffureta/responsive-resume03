@@ -86,15 +86,12 @@ body {
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
-    /* text-transform: uppercase; */
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
 }
 
-.profile__name {
-    color: var(--icon-color);
-}
+.profile__name {color: var(--icon-color);}
 
 .btn.download-btn {
     width: 8rem;
